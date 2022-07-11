@@ -1,0 +1,72 @@
+[debug] [2022-07-10T16:44:46.021Z] ----------------------------------------------------------------------
+[debug] [2022-07-10T16:44:46.023Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\com pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-10T16:44:46.023Z] CLI Version:   11.2.0
+[debug] [2022-07-10T16:44:46.023Z] Platform:      win32
+[debug] [2022-07-10T16:44:46.024Z] Node Version:  v18.1.0
+[debug] [2022-07-10T16:44:46.025Z] Time:          Sun Jul 10 2022 23:44:46 GMT+0700 (เวลาอินโดจีน)
+[debug] [2022-07-10T16:44:46.025Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-10T16:44:46.085Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-10T16:44:46.085Z] > authorizing via signed-in user (infosuwon@onetrustme.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-10T16:44:54.910Z] Using project from CLI flag: share-line-cir
+[debug] [2022-07-10T16:44:54.913Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/share-line-cir [none]
+[debug] [2022-07-10T16:44:56.000Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/share-line-cir 403
+[debug] [2022-07-10T16:44:56.000Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/share-line-cir {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-10T16:44:56.000Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-10T16:44:56.384Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\com pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\com pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:287:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project share-line-cir. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-10T16:45:20.452Z] ----------------------------------------------------------------------
+[debug] [2022-07-10T16:45:20.454Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\com pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-10T16:45:20.454Z] CLI Version:   11.2.0
+[debug] [2022-07-10T16:45:20.454Z] Platform:      win32
+[debug] [2022-07-10T16:45:20.455Z] Node Version:  v18.1.0
+[debug] [2022-07-10T16:45:20.455Z] Time:          Sun Jul 10 2022 23:45:20 GMT+0700 (เวลาอินโดจีน)
+[debug] [2022-07-10T16:45:20.456Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-10T16:45:20.517Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-10T16:45:20.517Z] > authorizing via signed-in user (infosuwon@onetrustme.com)
+[debug] [2022-07-10T16:45:20.517Z] [iam] checking project share-line-cir for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-10T16:45:20.519Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/share-line-cir:testIamPermissions [none]
+[debug] [2022-07-10T16:45:20.520Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/share-line-cir:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-10T16:45:22.304Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/share-line-cir:testIamPermissions 200
+[debug] [2022-07-10T16:45:22.304Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/share-line-cir:testIamPermissions {}
+[debug] [2022-07-10T16:45:22.305Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project share-line-cir:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-07-10T16:45:22.306Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/share-line-cir [none]
+[debug] [2022-07-10T16:45:23.251Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/share-line-cir 403
+[debug] [2022-07-10T16:45:23.251Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/share-line-cir {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-10T16:45:23.252Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-10T16:45:23.538Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\com pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\com pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:287:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project share-line-cir. Please make sure the project exists and your account has permission to access it.
